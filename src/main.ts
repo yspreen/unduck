@@ -55,6 +55,20 @@ function getBangredirectUrl() {
     return null;
   }
 
+  const base = query.replace("!", "");
+  if (["gm"].includes(base)) {
+    return "https://mail.google.com"
+  }
+  if (["yt", "y", "ty"].includes(base)) {
+    return "https://youtube.com"
+  }
+  if (["x"].includes(base)) {
+    return "https://x.com"
+  }
+  if (["map", "maps", "gma", , "gmap", "gmaps"].includes(base)) {
+    return "https://youtube.com"
+  }
+
   const match = query.match(/!(\S+)/i);
 
   const bangCandidate = match?.[1]?.toLowerCase();
