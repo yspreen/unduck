@@ -120785,6 +120785,15 @@ export const bangs = [
     u: "https://www.youtube.com/results?search_query={{{s}}}",
   },
   {
+    c: "Multimedia",
+    d: "www.youtube.com",
+    r: 463021,
+    s: "YouTube",
+    sc: "Video",
+    t: "y",
+    u: "https://www.youtube.com/results?search_query={{{s}}}",
+  },
+  {
     c: "Online Services",
     d: "yubnub.org",
     r: 10,
@@ -120882,15 +120891,6 @@ export const bangs = [
     sc: "Maps",
     t: "yxmaps",
     u: "https://maps.yandex.ru/?text={{{s}}}",
-  },
-  {
-    c: "Online Services",
-    d: "search.yahoo.com",
-    r: 1614,
-    s: "Yahoo!",
-    sc: "Search",
-    t: "y",
-    u: "http://search.yahoo.com/search?p={{{s}}}",
   },
   {
     c: "Entertainment",
