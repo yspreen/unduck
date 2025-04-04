@@ -60,7 +60,7 @@ function getBangredirectUrl() {
     return "https://mail.google.com"
   }
   if (["yt", "y", "ty"].includes(base)) {
-    return "https://youtube.com"
+    return "https://www.youtube.com"
   }
   if (["x"].includes(base)) {
     return "https://x.com"
