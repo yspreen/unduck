@@ -66,7 +66,7 @@ function getBangredirectUrl() {
     return "https://x.com"
   }
   if (["map", "maps", "gma", , "gmap", "gmaps"].includes(base)) {
-    return "http://maps.google.com"
+    return "https://maps.google.com"
   }
 
   const match = query.match(/!(\S+)/i);
