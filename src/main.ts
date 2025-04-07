@@ -68,8 +68,14 @@ function getBangredirectUrl() {
   if (["map", "maps", "gma", , "gmap", "gmaps"].includes(base)) {
     return "https://maps.google.com"
   }
+  if (["ch", "cha", "chat", "chatgpt"].includes(base)) {
+    return "https://chatgpt.com"
+  }
+  if (["cla", "clau", "claude"].includes(base)) {
+    return "https://claue.ai"
+  }
 
-  const match = query.match(/!(\S+)/i);
+  const match = query.match(/[\!\.](\S+)/i);
 
   const bangCandidate = match?.[1]?.toLowerCase();
   const selectedBang = bangs.find((b) => b.t === bangCandidate) ?? defaultBang;
