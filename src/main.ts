@@ -75,7 +75,7 @@ function getBangredirectUrl() {
     return "https://claue.ai"
   }
 
-  const match = query.match(/[\!\.](\S+)/i);
+  const match = query.match(/^[\!\.](\S+)/i) || query.match(/\s[\!\.](\S+)/i);
 
   const bangCandidate = match?.[1]?.toLowerCase();
   const selectedBang = bangs.find((b) => b.t === bangCandidate) ?? defaultBang;
