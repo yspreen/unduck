@@ -60,7 +60,7 @@ function getBangredirectUrl() {
     return "https://mail.google.com"
   }
   if (["yt", "y", "ty"].includes(base)) {
-    return "https://www.youtube.com"
+    return "https://www.youtube.com/"
   }
   if (["x"].includes(base)) {
     return "https://x.com"
@@ -73,6 +73,9 @@ function getBangredirectUrl() {
   }
   if (["cla", "clau", "claude"].includes(base)) {
     return "https://claue.ai"
+  }
+  if (["pr"].includes(base)) {
+    return "https://pr0gramm.com/"
   }
 
   const match = query.match(/^[\!\.](\S+)/i) || query.match(/\s[\!\.](\S+)/i);
